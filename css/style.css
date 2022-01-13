@@ -2,3 +2,74 @@ body{
     background-color: #fff;
     min-height: 100vh;
 }
+
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.modal-btn{
+    border: 2px solid #000;
+    background-color: blue;
+    padding: 15px;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.openModal{
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    height: 300px;
+    font-size: 30px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: yellow;
+    padding: 15px;
+    display: none;
+    animation: modal 1s linear both;
+    transition: all 1s linear;
+}
+
+@keyframes modal{
+    0% {
+        top: -100px;
+    }
+    50%{
+        top: 0px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+
+.show{
+    display: block;
+}
+
+.close-modal{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
